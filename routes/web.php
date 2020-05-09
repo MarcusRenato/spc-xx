@@ -147,11 +147,6 @@ Route::prefix('usuarios')->group(function () {
         'as' => 'user.delete',
         'uses' => 'UserController@destroy'
     ]);
-
-    Route::get('/sair', [
-        'as' => 'user.logout',
-        'uses' => 'UserController@logout'
-    ]);
 });
 
 Route::fallback(function () {

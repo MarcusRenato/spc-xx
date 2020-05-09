@@ -16,6 +16,7 @@ class UserController extends Controller
     public function __construct(User $user)
     {
         $this->user = $user;
+        $this->middleware('auth');
     }
 
     public function index()
@@ -145,14 +146,5 @@ class UserController extends Controller
             toast('Ocorreu um erro', 'error');
             return redirect()->back();
         }
-    }
-
-    public function logout()
-    {
-        dd("aqui");
-        Auth::logout();
-
-        toast('Você saiu do sistemas', 'success');
-        return redirect()->route('home');
     }
 }
