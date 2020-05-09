@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SPC - XX</title>
     <link rel="shortcut icon" href="{{ asset('/images/favicon.ico') }}" type="image/x-icon">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/material-icons-min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 </head>
 
 <body>
@@ -78,7 +77,7 @@
 
             @yield('content')
         </div>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('/js/app.js') }}"></script>
     <script>
         $('#flash-overlay-modal').modal();
         // $('div.alert').not('.alert-important').delay(3000).fadeOut(350);
